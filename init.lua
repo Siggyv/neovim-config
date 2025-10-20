@@ -1,3 +1,5 @@
+require("vim-opts")
+
 -- init lazy package manager --
 local lazypath = vim.fn.stdpath("data") .. "lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -24,6 +26,4 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- setup package manager --
-require("vim-opts")
 require("lazy").setup("plugins")
-
