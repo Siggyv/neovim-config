@@ -1,4 +1,4 @@
-require("vim-opts")
+require("core.vim-opts")
 
 -- init lazy package manager --
 local lazypath = vim.fn.stdpath("data") .. "lazy/lazy.nvim"
